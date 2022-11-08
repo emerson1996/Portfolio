@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.CSS">
+
     <title>Porfólio</title>
+    
 </head>
 <body>
-    
+    <div>
+        <div class="container">
+            <header>
+                <div class="img-wrapper">
+                    <img src="img/bg.jpg" alt=""> <!-- Wrapper dentro de um embrulho-->
+                </div>
+                <div class="banner">
+                    <h1 class=" animation"> Olá, meu nome é Emerson.</h1>
+                    
+                    <p>Sou programador e gostaria de apresentar meu<br>
+                        trabalho para você através deste portfólio.</p> 
+                        
+                    <button id="button"> <a href=""> Saiba mais </a> </button>
+                            
+                </div>
+            </header>
+
+
+            </div>
+        </div>
+    </div>
+
+
+<!--Inicio Animação JS digitação-->
+    <script>
+        function typeWrite (elemento){
+            const textArray = elemento.innerHTML.split ('');
+            elemento.innerHTML='';
+            textArray.forEach((letra,i) =>{
+                setTimeout(function(){
+                    elemento.innerHTML += letra;
+
+                },140*i)
+            });
+
+        }
+         const name = document.querySelector('.animation');
+        typeWrite(name);
+
+    </script>
+<!--Fim Animação JS digitação-->
+
 </body>
 </html>
