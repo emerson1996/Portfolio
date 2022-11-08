@@ -10,7 +10,8 @@ Controle das tarefas no GitHub
 
 
 :package: Novas funcionalidades
-:up: Atualização
-:beatle: Correções de bugs
-:checkred_flag: Release
+:arrow_up: Atualização
+:beetle: Correções de bugs
+:checkered_flag: Release
+
 
