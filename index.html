@@ -14,8 +14,19 @@
     
 </head>
 <body>
-    <div>
+    
         <div class="container">
+            
+            <div class="hamburguer">
+                <div class="txt">Menu</div>
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>   
+                <span>Fechar</span>         
+            </div>
+
+         
+
             <header>
                 <div class="img-wrapper">
                     <img src="img/bg.jpg" alt=""> <!-- Wrapper dentro de um embrulho-->
@@ -31,30 +42,29 @@
                 </div>
             </header>
 
+            <div class="sidebar">
+                <nav>
+                    <ul class="menu">
+                        <li class="menuItem"><a href="#" class="menu-link">Home</a></li>
+                        <li class="menuItem"><a href="#" class="menu-link">Conhecimentos</a></li>
+                        <li class="menuItem"><a href="#" class="menu-link">Projetos</a></li>
+                        <li class="menuItem"><a href="#" class="menu-link">Contatos</a></li>
+                        
+                    </ul>
 
+                    <div class="socialMedia"> 
+
+                        <a target="_blank" href="https://www.linkedin.com/in/emerson-rodrigues-864b54121/" ><i class="fab fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/emerson1996"><i class="fab fa-github"></i></a>
+                        <a target="_blank" href="https://wa.me/5581993363366?text=Ol%C3%A1,%20me%20chamo%20Emerson%20estou%20a%20procura%20de%20uma%20vaga%20de%20dev.%20j%C3%BAnior%20de%20prefer%C3%AAncia%20front-end.%0AConhecimento%20em%20HTML,CSS.%0AAprofundando%20em%20JS%20e%20React"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                </nav>
             </div>
-        </div>
     </div>
 
-
-<!--Inicio Animação JS digitação-->
-    <script>
-        function typeWrite (elemento){
-            const textArray = elemento.innerHTML.split ('');
-            elemento.innerHTML='';
-            textArray.forEach((letra,i) =>{
-                setTimeout(function(){
-                    elemento.innerHTML += letra;
-
-                },140*i)
-            });
-
-        }
-         const name = document.querySelector('.animation');
-        typeWrite(name);
-
-    </script>
-<!--Fim Animação JS digitação-->
-
 </body>
+
+<script src="script.js"></script>
+
 </html>

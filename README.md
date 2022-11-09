@@ -5,13 +5,14 @@ Portfolio do desenvolvedor
 
 Controle das tarefas no GitHub
 
+
 ## ícones
 
 
 
-:package: Novas funcionalidades
-:arrow_up: Atualização
-:beetle: Correções de bugs
-:checkered_flag: Release
+- :package: Novas funcionalidades
+- :arrow_up: Atualização
+- :beetle: Correções de bugs
+- :checkered_flag: Release
 
 
