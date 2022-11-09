@@ -182,7 +182,7 @@ header{
 }
 
 
-/*Inicio Animação JS h1 digitação*/
+/*Inicio Animação cursor h1 digitação*/
 .animation::after{
     content: '|';
     margin-left: 5px;
@@ -206,7 +206,7 @@ header{
 
     }
 }
-/*Fim Animação JS h1 digitação*/
+/*Fim Animação cursor h1 digitação*/
 
 
 .banner p {
