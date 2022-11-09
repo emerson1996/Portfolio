@@ -12,7 +12,7 @@ Controle das tarefas no GitHub
 
 - :package: Novas funcionalidades
 - :arrow_up: Atualização
-- :beetle: Correções de bugs
+- :lady_beetle: Correções de bugs
 - :checkered_flag: Release
 
 
