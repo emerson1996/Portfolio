@@ -31,3 +31,40 @@ typeWrite(name);
 
 //Fim Animação JS h1 digitação
 
+
+
+
+
+/*const grid = document.querySelector('.grid')
+
+const revealCard = ( {target} ) =>{
+
+    target.parentNode.classList.add('reveal-card');
+
+
+}
+
+const createCard = () => {
+
+  
+
+    const card = document.createElement('div');
+    const front = document.createElement('div');
+    const back = document.createElement('div');
+
+    card.className='card';
+    front.className='face front';
+    back.className='face back';
+
+    card.appendChild(front);
+    card.appendChild(back);
+
+    grid.appendChild(card);
+
+    card.addEventListener('click',revealCard);
+
+}*/
+
+
+
+
