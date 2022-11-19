@@ -594,3 +594,19 @@ header {
         margin-left: 0;
     }
 }
+
+@media (max-width:450px) {
+
+    .banner p {
+
+        display: table-cell;
+       position: relative;
+       
+    }
+   #button{
+   
+    top: 1rem;
+   }
+
+   
+}
