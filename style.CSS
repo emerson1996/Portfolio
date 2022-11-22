@@ -16,6 +16,7 @@
 :root {
     --font-primary: "Baloo Da 2", serif;
     --font-secundary: "Poppins", serif;
+   
 
 }
 
@@ -394,7 +395,7 @@ header {
 
 /*Fim da Animação do banner*/
 
-/*CSS DA PÁGINA 2*/
+                                                        /*CSS DA PÁGINA 2*/
 
 .grid {
 
@@ -421,6 +422,9 @@ header {
     text-align: center;
     text-decoration-line: overline;
     text-decoration-color: #450288;
+    font-size: 2rem;
+    color: #2c2b2e;
+ 
 
 }
 
@@ -440,10 +444,13 @@ header {
     /*denife a proporção do card */
     width: 80%;
     height: auto;
-    box-shadow: 10px 10px 10px rgba(17, 17, 17, 0.4);
-    border-top: 2px solid rgba(24, 22, 24, 0.5);
-    border-left: 2px solid rgba(19, 17, 17, 0.5);
+    box-shadow: 10px 10px 10px rgba(1, 1, 1, 0.2);
+    border-top: 2px solid rgba(24, 22, 24, 0.2);
+    border-left: 2px solid rgba(19, 17, 17, 0.2);
     border-radius: 10px;
+
+    
+
     position: relative;
     transition: all 0.5s linear;
     transform-style: preserve-3d;
@@ -475,6 +482,7 @@ header {
     align-items: center;
     text-align: center;
     justify-content: center;
+   
 
 }
 
@@ -489,7 +497,11 @@ header {
 
 .front {
 
+    width: 100%;
+    height: 50%;
     background-color: #450288;
+    border-radius: 10px 10px 10px 70px;
+    border-top: 200px;
 
 }
 
@@ -497,18 +509,18 @@ header {
 
     transform: rotateY(180deg);
     color: #FFF;
-    margin-top: 1rem;
+    margin-top: 4rem;
 }
 
 .front p {
-    margin-top: 1rem;
+    margin-top: 3rem;
     font-family: montserrat, sans-serif;
     text-align: center;
     align-items: center;
     justify-content: center;
     font-weight: 600;
     transform: rotateY(180deg);
-    color: #FFF;
+    color:#000000;
 
 
 }
@@ -567,6 +579,7 @@ header {
 
 
     }
+   
 
     .face {
         width: 100%;
@@ -607,6 +620,107 @@ header {
    
     top: 1rem;
    }
-
+                                   
    
+}
+
+                                            /*CSS DA PÁGINA 3 PROJETOS*/
+
+
+.projetos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cardsProjetos {
+
+    width: 18rem;
+    height: 25rem;
+    position: relative;
+
+    bottom: 1rem;
+    
+}
+
+.cardImgWrapper{
+   
+    width: 100%;
+    height: 100%;
+    background-color: #d3b0f7;
+    border-radius: .5rem;
+    
+    
+
+}
+
+.cardImgWrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    opacity: .5;
+    transition: .3;
+    
+}
+
+.cardsProjetos:hover .cardImgWrapper img{
+
+   opacity: 0.2;
+
+}
+
+.cardInfo{
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, .6);
+    visibility: hidden;
+    transition: .3s linear;
+    
+
+}
+
+.cardInfo h2 {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.cardInfo h3 {
+    font-family: var(--font-secundary); 
+    font-weight: bolder;
+    color: #ff4081;
+    margin-bottom: 1.5rem;
+}
+
+.cardInfo p {
+    font-family: var(--font-secundary);
+    color: #eee;
+    width: 80%;
+    font-weight: 500;
+    margin-bottom:2rem ;
+}
+
+.cardInfo button{
+
+        background: linear-gradient(to right, #a044ff, #6a3093);
+        padding: 0.7rem 3rem;
+        border: none;
+        border-radius: .5rem;
+        font-family: 'Poppins', serif;
+        line-height: .9rem;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 0.8rem; 
+        letter-spacing: 0.05rem;
+        cursor: pointer;
+
+}
+
+.cardsProjetos:hover .cardInfo{
+
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+    
 }
