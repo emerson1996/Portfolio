@@ -9,13 +9,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="style.CSS">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Porfólio</title>
     
 </head>
 <body>
     
-        <div class="container">
+        <div class="container" >
             
             <div class="hamburguer">
                 
@@ -27,7 +28,7 @@
 
          
 
-            <header>
+            <header >
                 <div class="img-wrapper">
                     <img src="img/bg.jpg" alt=""> <!-- Wrapper dentro de um embrulho-->
                 </div>
@@ -65,7 +66,7 @@
     <!--Fim do Conteúdo Principal Página 1-->
 
                                     <!-- INICIO DA PAGINA 2 -- CONHECIMENTOS -->
-        <div class="conhecimentos">
+        <div class="conhecimentos" data-aos="zoom-in">
             <h1 class="h1page2" id="conhecimento">Conhecimentos</h1>
           
             <section class="grid">
@@ -142,7 +143,7 @@
 
                                     <!-- INICIO DA PAGINA 3 -- PROJETOS -->
 
-            <section class="sessaoProjetos">
+            <section class="sessaoProjetos" data-aos="zoom-in">
                <div class="h1page2">
                 <h1 class="h1page2">Projetos</h1>
                </div>
@@ -196,4 +197,12 @@
 
 <script src="script.js"></script>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS - animaçoes scrool do css-->
+<script>
+    AOS.init(
+        {
+            duration:1000,
+        }
+    );
+</script>
 </html>

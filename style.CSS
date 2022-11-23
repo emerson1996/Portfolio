@@ -20,6 +20,10 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 .hamburguer {
 
@@ -460,8 +464,22 @@ header {
     text-align: center;
     justify-content: center;
     margin-bottom: 1rem;
+    perspective: 1000px;
+    
 
 
+}
+.card.flip{
+    transform: rotateY(180deg);
+    
+}
+
+
+
+
+.card:active{
+    transform: scale(0.90);
+    transform: rotatex(70deg);
 }
 
 .card:nth-child(5) {
@@ -482,6 +500,7 @@ header {
     align-items: center;
     text-align: center;
     justify-content: center;
+    
    
 
 }
@@ -502,6 +521,7 @@ header {
     background-color: #450288;
     border-radius: 10px 10px 10px 70px;
     border-top: 200px;
+    
 
 }
 
@@ -552,9 +572,7 @@ header {
 
 
 
-.card:hover {
-    transform: rotateY(180deg);
-}
+
 
 .grid i {
     display: flex;

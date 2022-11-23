@@ -1,11 +1,11 @@
 
 
-//Inicio evento do menu hamburguer
+                                    //Inicio evento do menu hamburguer
 
 
    var hamburguer = document.querySelector(".hamburguer") //(.hamburguer) seletor do html
 
-   hamburguer.addEventListener("click",function(){ // addEventListener vai escutar o evento de click, quando acontercer o click chama afunção
+   hamburguer.addEventListener("click",function(){ // addEventListener vai escutar o evento de click, quando acontercer o click chama a função
 
    document.querySelector('.container').classList.toggle('showMenu');  // toglee adicionar ou remover a classe showMenu me informa se o menu está aberto ou fechado
    });  
@@ -13,7 +13,7 @@
 //Fim evento  menu hamburguer
 
 
-//Iníco Animação JS h1 digitação 
+                                    //Iníco Animação JS h1 digitação 
    
      function typeWrite (elemento){
     const textArray = elemento.innerHTML.split ('');
@@ -33,37 +33,22 @@ typeWrite(name);
 
 
 
+                                    //Início Animação FLIPCARD
 
 
-/*const grid = document.querySelector('.grid')
+let cards = document.querySelectorAll(".card");
 
-const revealCard = ( {target} ) =>{
-
-    target.parentNode.classList.add('reveal-card');
-
-
+function flipcard() {
+    this.classList.toggle('flip');
 }
 
-const createCard = () => {
+cards.forEach(card => card.addEventListener('click', flipcard));
 
-  
 
-    const card = document.createElement('div');
-    const front = document.createElement('div');
-    const back = document.createElement('div');
+//Fim Animação JS FLIPCARD
 
-    card.className='card';
-    front.className='face front';
-    back.className='face back';
 
-    card.appendChild(front);
-    card.appendChild(back);
 
-    grid.appendChild(card);
-
-    card.addEventListener('click',revealCard);
-
-}*/
 
 
 
