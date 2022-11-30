@@ -8,7 +8,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
+   
 
 
 }
@@ -25,6 +25,7 @@ html{
 }
 
 
+
 .hamburguer {
 
     width: 2rem;
@@ -38,6 +39,7 @@ html{
     flex-direction: column;
     justify-content: space-evenly;
     transition: transform 1.3s;
+    position: fixed;
 
 
 }
@@ -64,7 +66,8 @@ html{
 .showMenu .txt {
     opacity: 0;
     visibility: hidden;
-}
+   
+} 
 
 .showMenu .hamburguer {
     /*Todos dentro do showmenu tem essa formatação*/
@@ -153,13 +156,14 @@ header {
     height: 100vh;
     overflow: hidden;
     position: relative;
+    
 }
 
 .img-wrapper {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    animation: zoomBg 30s;
+    animation: zoomBg 20s;
     margin-bottom: 5rem;
 }
 
@@ -246,9 +250,10 @@ header {
     text-shadow: .2rem .2rem rgba(0, 0, 0, 0.4);
     width: 398px;
     height: 64px;
-    font-weight: 300;
+    font-weight: 550;
     margin-bottom: 1.5rem;
     animation: moveBanner 1.3s linear;
+    
 
 
 }
@@ -298,6 +303,7 @@ header {
 
     right: 0;
     /*Se o elemento sidebar tiver a classe show menu sua possição a partir da direita é 0*/
+   
 
 }
 
@@ -307,7 +313,10 @@ header {
     left: 50%;
     /* x     y   */
     transform: translate(-50%, -50%);
+    
 }
+
+
 
 .menuItem {
     text-align: center;
@@ -318,8 +327,8 @@ header {
 /*Inicio animação Menu*/
 .menu-link {
     font-family: var(--font-secundary);
-    font-size: 1.5rem;
-    color: #4a494b;
+    font-size: 1.4rem;
+    color: #010002;
     font-weight: 800;
     transition: color 1.1s;
 
@@ -365,6 +374,8 @@ header {
 
 }
 
+
+
 /*Fim animação social midia*/
 
 /*Inicío da Animação do botão*/
@@ -399,7 +410,6 @@ header {
 
 /*Fim da Animação do banner*/
 
-                                                        /*CSS DA PÁGINA 2*/
 
 .grid {
 
@@ -411,7 +421,6 @@ header {
     margin: 0 auto;
     /*0 em cima e em baixo -- auto esquerda e direita*/
     z-index: 0;
-    margin-left: 20%;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -462,24 +471,27 @@ header {
     cursor: pointer;
     align-items: center;
     text-align: center;
+    justify-items: center;
     justify-content: center;
     margin-bottom: 1rem;
-    perspective: 1000px;
+    
+    
     
 
 
+}
+
+.card:hover{
+    transform:scale(1.005)
 }
 .card.flip{
-    transform: rotateY(180deg);
+    transform: rotateY(180deg);  
     
 }
-
-
-
 
 .card:active{
     transform: scale(0.90);
-    transform: rotatex(70deg);
+    transform: rotatex(40deg);
 }
 
 .card:nth-child(5) {
@@ -510,9 +522,11 @@ header {
 }
 
 .fab {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 
 }
+
+
 
 .front {
 
@@ -579,68 +593,190 @@ header {
 
 }
 
-@media (max-width:705px) {
+@media  (max-width:1024px)  {
 
-    .grid,
-    .card,
-    .front,
-    .fab,
-    .back {
-        display: flex;
-        flex-direction: column;
-        width: 95%;
-        height: auto;
-        margin-left: 0;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+    header{
+        width: 100%;
+        
+    }
 
+    .conhecimentos{
+        width: auto;  
 
     }
+
+
    
-
-    .face {
-        width: 100%;
-        height: 100%;
-
+    .projetos{
+        
+        max-width: auto;
+        
     }
-
-    .front h1 {
-        margin-bottom: 80%;
+    .grid{
+        max-width: auto;
     }
-
-    .front p {
-        position: absolute;
-        width: 100%;
-        margin-bottom: 50%;
-
-    }
-
-
-    .card:nth-child(5) {
-        margin-left: 0;
-    }
-
-    .card:nth-child(4) {
-        margin-left: 0;
-    }
+    
+    
 }
 
-@media (max-width:450px) {
+@media  (max-width:912px) {
+
+
+    .banner h1 {
+            font-size: 2.5rem;
+            margin-right: 0.4rem;
+        } 
+
+    .hamburguer{
+        left:1rem;
+    }
+        .showMenu .sidebar {
+    
+            left: 0;
+            /*Se o elemento sidebar tiver a classe show menu sua possição a partir da direita é 0*/
+    
+    
+        }
+
+     .sidebar {
+                    
+           left: -20rem;
+         transition: all 0.7s;         
+}
+
+    .card {
+        
+        max-width: 100%;
+    
+
+    }
+
+    .projetos{
+        
+    
+        gap: 2rem;
+        max-width: 100%;
+
+       
+    }
+    .conhecimentos{
+        width: 100%;
+    }
+    .grid{
+        width: 100%;
+    }
+
+   
+ }
+
+ @media  (max-width:600px)  {
+
+
+    
+
+    .back i{
+        font-size: 5rem;
+    }
+
+    .face h1{
+        font-size: 1rem;
+    }
+
+    .front p{
+
+        margin-top: 3rem;
+        font-size: 0.8rem;
+        
+    }
+
+    .front h1{
+        margin-top: 2rem;
+    }
+
+        .cardInfo  {
+    
+            margin-left: -20px;
+        }
+
+     .cardInfo button{
+                padding: 0.53rem 1rem;
+            }
+
+        .hamburguer span {
+            width: 4rem;
+            height: 1rem;
+        
+        }
+
+        .socialMedia i.fab {
+            position:unset;
+        }
+    
+  }
+
+        
+   @media (max-width:520px){
+
+
+    .grid{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .card{
+        width: 60%;
+        align-items: center;
+        
+    }
+    .front p{
+        margin-top: 5.5rem;
+    }
+
+    .back i {
+        margin-top: 3rem;
+    }
+
+    .front{
+        height: 40%;
+    }
+   
+    .projetos{
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+    }
+        .card:nth-child(5) {
+            margin-left: 0rem;
+        }
+    
+        .card:nth-child(4) {
+            margin-left: 0rem;
+        }
 
     .banner p {
 
-        display: table-cell;
-       position: relative;
-       
+        width: 300px;
+        height: 90px
+    
+    }    
+    .banner h1 {
+        font-size: 2.5rem;
+        margin-right: 0.4rem;
     }
-   #button{
-   
-    top: 1rem;
+
+    .hamburguer{
+        position: fixed;
+    }
    }
-                                   
-   
-}
+        
+        
+
+ 
+
 
                                             /*CSS DA PÁGINA 3 PROJETOS*/
 
@@ -740,5 +876,178 @@ header {
     bottom: 2rem;
     opacity: 1;
     visibility: visible;
+    
+}
+/*FIM DO CSS DA PÁGINA 3 PROJETOS*/
+
+
+
+                                        /*CSS DA PÁGINA 4 CONTATOS*/
+.sessaoContato{
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+.contatoWrapper{
+
+    background-color: white;
+    width: 60%;
+    display: flex;
+    height: 30rem;
+    box-shadow: 0 2rem 5rem rgba(20, 0, 46, 0.5);
+    border: #450288 5px solid;
+    border-radius: 1rem;
+    
+}
+
+.icon{
+    width: 100%;
+    margin-top: 2rem;
+    line-height: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contatoRight a {
+
+    font-size: 3rem; 
+}
+.sessaoContato h1{
+    width: 100%;
+    font-family: var(--font-primary);
+    color: #272727;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.sessaoContato form{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 3rem;
+    outline: none;
+    
+}
+
+.inputGroup{
+    position: relative;
+}
+
+.inputGroup textarea{
+
+    padding-top: 1rem;
+    resize: none;
+}
+.field{
+    
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-family: var(--font-secundary);
+    font-size: 1rem;
+    font-weight: 800;
+    border-bottom: 1px gray dashed;
+    height: 3rem;
+    outline: none;
+    margin: 2rem 0;
+    transition: 1s focus;
+   
+}
+
+.fieldLabel{
+    position: absolute;
+    left: 0;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    top: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s;
+    
+}                            
+.field:focus ~ label { /* ~ label a seguir */
+
+    top: 0 !important;
+    font-size: 0.8rem !important;
+    color: #450288!important ;
+    position: absolute;
+}
+
+.field:focus{
+    border-bottom:2px solid;
+}
+.contatoLeft{
+    width: 50%;  
+    
+    padding: 1rem 3rem 3rem 3rem;
+    
+}
+
+.contatoRight{
+    background-color: rgb(65, 0, 90);
+    width: 50%;
+    text-align: center;
+    border-left:rgb(209, 107, 240) 2px solid;
+    border-radius: 0px 8px 8px 0px;
+    
+}
+
+.contatoRight .fa-linkedin:hover{
+
+    transform: scale(1.2);
+    color: #0a66c2; 
+    transition: 1s;   
+      
+}
+
+.contatoRight .fa-github:hover {
+
+    transform: scale(1.2);
+    color: #ffffff; 
+    transition: 1s;
+}
+
+.contatoRight .fa-whatsapp:hover {
+
+    transform: scale(1.2);
+    color:#128c7e ;
+    transition: 1s;
+    
+}
+
+
+.contatoRight img {
+    position: relative;
+    width: 50%;
+    border-radius: 50%;
+    margin-top: 3rem;
+    
+}
+
+.btnSubmit{
+
+        background: linear-gradient(to right, #a044ff, #6a3093);
+        padding: 0.7rem 3rem;
+        border: none;
+        border-radius: .5rem;
+        font-family: 'Poppins', serif;
+        line-height: .9rem;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 0.8rem;
+        letter-spacing: 0.05rem;
+        cursor: pointer;
+        margin-top: -1rem;
+        font-weight: 600;
+        border-left: 10px solid #b473f5 ;
+       
+        transition: transform .3s ;
+}
+.btnSubmit:hover{
+    transform: scale(1.08);
     
 }

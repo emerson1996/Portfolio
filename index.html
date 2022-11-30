@@ -17,7 +17,7 @@
 <body>
     
         <div class="container" >
-            
+        
             <div class="hamburguer">
                 
                 <div class="line" id="line1"></div>
@@ -30,7 +30,7 @@
 
             <header >
                 <div class="img-wrapper">
-                    <img src="img/bg.jpg" alt=""> <!-- Wrapper dentro de um embrulho-->
+                    <img src="img/smoke.jpg" alt=""> <!-- Wrapper dentro de um embrulho-->
                 </div>
                 <div class="banner">
                     <h1 class=" animation"> Olá, meu nome é Emerson.</h1>
@@ -48,10 +48,12 @@
             <aside class="sidebar">
                 <nav>
                     <ul class="menu">
-                        <li class="menuItem"><a href="#" class="menu-link">Home</a></li>
+                        <li class="menuItem"><a href="#" class="menu-link"> Home</a></li>
                         <li class="menuItem"><a href="#conhecimento" class="menu-link">Conhecimentos</a></li>
-                        <li class="menuItem"><a href="#" class="menu-link">Projetos</a></li>
-                        <li class="menuItem"><a href="#" class="menu-link">Contatos</a></li>
+                        <li class="menuItem"><a href="#projetos" class="menu-link">Projetos</a></li>
+                        <li class="menuItem"><a href="#contatos" class="menu-link">Contatos</a></li>
+                        <li class="menuItem"><a href="#" class="menu-link">Currículo</a></li>
+                        <li class="menuItem"><a href="#" class="menu-link">Sobre mim</a></li>
                         
 
                     <div class="socialMedia"> 
@@ -66,17 +68,17 @@
     <!--Fim do Conteúdo Principal Página 1-->
 
                                     <!-- INICIO DA PAGINA 2 -- CONHECIMENTOS -->
-        <div class="conhecimentos" data-aos="zoom-in">
-            <h1 class="h1page2" id="conhecimento">Conhecimentos</h1>
+        <div class="conhecimentos" id="conhecimento" >
+            <h1 class="h1page2" data-aos="zoom-in">Conhecimentos</h1>
           
-            <section class="grid">
+            <section class="grid" data-aos="zoom-in">
                 
 
                     
        
                 <div class="card">
                     <div class="face front">
-                        <h1> </i>HTML</h1>
+                        <h1> HTML</h1>
                         <p> O HTML É LEGAL</p>   
                     </div>
                     <div class="face back">
@@ -113,10 +115,9 @@
                 <div class="card">
                     <div class="face front">
                         <h1>Git e GitHub </h1>
-
                         <p> Git e GitHub É DA HORA PO</p>   
                     </div>
-                    <div class="face back">
+                     <div class="face back">
                             <h1> Git e GitHub</h1> 
                         <i class="fab fa-github"></i>     
                     </div>
@@ -143,8 +144,8 @@
 
                                     <!-- INICIO DA PAGINA 3 -- PROJETOS -->
 
-            <section class="sessaoProjetos" data-aos="zoom-in">
-               <div class="h1page2">
+            <section class="sessaoProjetos" data-aos="zoom-in" id="projetos">
+               <div >
                 <h1 class="h1page2">Projetos</h1>
                </div>
               
@@ -152,7 +153,7 @@
             
                 <div class="cardsProjetos"> 
                 
-                <div class="cardImgWrapper"> <img src="img/Empety3.webp" alt=""></div>
+                <div class="cardImgWrapper"> <img src="img/pj.jpg" alt=""></div>
                     <div class="cardInfo">
                             <h2>Nome do projeto</h2>
                             <h3>Técnologias do projeto</h3>
@@ -162,7 +163,7 @@
                 </div> 
 
                 <div class="cardsProjetos">
-                     <div class="cardImgWrapper"><img src="img/Empety3.webp" alt=""> </div>
+                     <div class="cardImgWrapper"><img src="img/pj.jpg" alt=""> </div>
                         <div class="cardInfo">
                             <h2>Nome do projeto</h2>
                             <h3>Técnologias do projeto</h3>
@@ -172,7 +173,7 @@
                 </div>      
 
             <div class="cardsProjetos">
-                <div class="cardImgWrapper"> <img src="img/Empety3.webp" alt=""> </div>
+                <div class="cardImgWrapper"> <img src="img/pj.jpg" alt=""> </div>
                 <div class="cardInfo">
                             <h2>Nome do projeto</h2>
                              <h3>Técnologias do projeto</h3>
@@ -183,6 +184,77 @@
         </div>
         
             </section>
+
+
+<!-- FIM DA PAGINA 3 -- PROJETOS -->
+
+                               
+                                    <!-- INICIO DA PAGINA 4 -- CONTATOS -->
+
+    <section  data-aos="zoom-in-right"class="sessaoContato">
+
+      
+
+        <div  class="contatoWrapper">
+            <div class="contatoLeft">
+
+                <h1  id="contatos">Contatos</h1>
+
+                
+
+                <form >
+                    <div class="inputGroup">
+                    
+                    <input onBlur="Campo(0)"  type="text" class="field" id="nome"> 
+                    <label for="nome" class="fieldLabel">Nome</label>
+            
+                    </div>
+
+
+                    <div class="inputGroup">
+                    
+                        <input onBlur="Campo(1)"  type="text" class="field" id="email">
+                        <label for="email" class="fieldLabel">E-mail</label>
+                    
+                    </div>
+
+
+                    <div class="inputGroup">
+                    
+                        <textarea onBlur="Campo1(0)" class="field" id="mensagem"></textarea>
+                        <label for="mensagem" class="fieldLabel">Digite sua mensagem</label>    
+                    
+                    </div>
+
+                    <button class="btnSubmit" type="submit"> Enviar </button>
+                </form>
+
+
+
+
+            </div>
+
+            <div class="contatoRight">
+
+                <img class="imgContato" src="img/FundoRoxo.png" alt="">
+
+                <div class="icon">  
+                <a target="_blank" href="https://www.linkedin.com/in/emerson-rodrigues-864b54121/" ><i class="fab fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/emerson1996"><i class="fab fa-github"></i></a>
+                <a target="_blank" href="https://wa.me/5581993363366?text=Ol%C3%A1,%20me%20chamo%20Emerson%20estou%20a%20procura%20de%20uma%20vaga%20de%20dev.%20j%C3%BAnior%20de%20prefer%C3%AAncia%20front-end.%0AConhecimento%20em%20HTML,CSS.%0AAprofundando%20em%20JS%20e%20React"><i class="fab fa-whatsapp"></i></a> 
+                </div>
+                
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
            
         
 

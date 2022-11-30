@@ -15,15 +15,15 @@
 
                                     //Iníco Animação JS h1 digitação 
    
-     function typeWrite (elemento){
+function typeWrite (elemento){
     const textArray = elemento.innerHTML.split ('');
     elemento.innerHTML='';
-    textArray.forEach((letra,i) =>{
-        setTimeout(function(){
-            elemento.innerHTML += letra;
+            textArray.forEach((letra,i) =>{
+                setTimeout(function(){
+                    elemento.innerHTML += letra;
 
-        },70*i)
-    });
+                },70*i)
+            });
 
 }
  const name = document.querySelector('.animation');
@@ -49,6 +49,44 @@ cards.forEach(card => card.addEventListener('click', flipcard));
 
 
 
+                                    //Início Animação label do formulário
+
+function Campo(p) {
+    var campo = document.getElementsByTagName("input")[p]
+    var styleLabel = campo.parentElement.lastElementChild.style;
+    if (campo.value != "") {
+
+    styleLabel.fontSize =".8rem"; 
+    styleLabel.top ="0px";
+    styleLabel.color ="#450288";
+
+    } else {
+
+    styleLabel.fontSize ="1rem"; 
+    styleLabel.top ="3rem";
+    styleLabel.color ="#000";
+        
+    }
+   
+    
+    }
+function Campo1(q) {
+    var campo1 = document.getElementsByTagName("textarea")[q]
+    var styleLabel2 = campo1.parentElement.lastElementChild.style;
+    if (campo1.value != "") {
+       
+        styleLabel2.fontSize =".8rem"; 
+        styleLabel2.top ="0px";
+        styleLabel2.color ="#450288";
+    } else {
+        
+        styleLabel.fontSize ="1rem"; 
+        styleLabel.top ="3rem";
+        styleLabel.color ="#000";
+
+    }
+    
+    }
 
 
 
