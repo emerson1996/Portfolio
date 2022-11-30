@@ -202,10 +202,10 @@
 
                 
 
-                <form >
+                <form action="https://formspree.io/f/xjvzqgda" method="POST" >
                     <div class="inputGroup">
                     
-                    <input onBlur="Campo(0)"  type="text" class="field" id="nome"> 
+                    <input onBlur="Campo(0)" required type="text" class="field" id="nome"> 
                     <label for="nome" class="fieldLabel">Nome</label>
             
                     </div>
@@ -213,7 +213,7 @@
 
                     <div class="inputGroup">
                     
-                        <input onBlur="Campo(1)"  type="text" class="field" id="email">
+                        <input onBlur="Campo(1)" required type="email" class="field" id="email">
                         <label for="email" class="fieldLabel">E-mail</label>
                     
                     </div>
@@ -221,7 +221,7 @@
 
                     <div class="inputGroup">
                     
-                        <textarea onBlur="Campo1(0)" class="field" id="mensagem"></textarea>
+                        <textarea onBlur="Campo1(0)" required class="field" id="mensagem"></textarea>
                         <label for="mensagem" class="fieldLabel">Digite sua mensagem</label>    
                     
                     </div>

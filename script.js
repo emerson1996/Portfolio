@@ -80,9 +80,9 @@ function Campo1(q) {
         styleLabel2.color ="#450288";
     } else {
         
-        styleLabel.fontSize ="1rem"; 
-        styleLabel.top ="3rem";
-        styleLabel.color ="#000";
+        styleLabel2.fontSize ="1rem"; 
+        styleLabel2.top ="3rem";
+        styleLabel2.color ="#000";
 
     }
     
